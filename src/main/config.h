@@ -22,7 +22,7 @@
 #ifndef __STU_CONFIG_H__
 #define __STU_CONFIG_H__
 
-#define ENABLE_SERIAL_COMMANDS    //Comment out, to omit Command shell code.
+//#define ENABLE_SERIAL_COMMANDS    //Comment out, to omit Command shell code.
 #define ENABLE_NUNCHUCK           //Comment out, to omit Nunchuck code.
 /*#define ENABLE_TOUCHSCREEN        //Comment out, to omit Touchscreen code.*/
 #define ENABLE_PWM_SERVO
@@ -100,8 +100,8 @@ const int SWAY_BAND = MAX_SWAY - MIN_SWAY;
 #define MAX_SURGE   20
 const int SURGE_BAND = MAX_SURGE - MIN_SURGE;
 
-#define MIN_HEAVE   -10
-#define MAX_HEAVE   10
+#define MIN_HEAVE   -20
+#define MAX_HEAVE   20
 const int HEAVE_BAND = MAX_HEAVE - MIN_HEAVE;
 
 /*

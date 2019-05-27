@@ -7,7 +7,7 @@ struct point
 {
   float p[NUM_AXES];
 };
-#define MAX_POINTS 20
+#define MAX_POINTS 5
 
 struct point points[ MAX_POINTS ];
 
