@@ -80,7 +80,13 @@ void startGesture( int gesture )
       Serial.println ("GESTURE_OI");
 
       setSpeed(3.0);
-  
+       addPoint(0.0, 0.0, 0.0, 0.0, 0.0, 0.0 );
+
+     addPoint(30, 0.0, 0.0, 0.0, 0.0, 0.0);
+     addPoint(-30, 0.0, 0.0, 0.0, 0.0, 0.0);
+      addPoint(0.0, 30, 0.0, 0.0, 0.0,0.0);
+     addPoint(0.0, -30, 0.0, 0.0, 0.0, 0.0);
+      addPoint(0.0, 0.0, 0.0, 0.0, 0.0, 0.0 );
       /*addPoint(0,85);
       addPoint(0,70);
       addPoint(0,85);

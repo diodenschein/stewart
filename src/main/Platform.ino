@@ -21,7 +21,7 @@
 */
 
 #include "Platform.h"
-#include "Logger.h"
+//#include "Logger.h"
 
 bool Platform::home(float *servoValues) {
   return moveTo (servoValues, 0, 0, 0, 0, 0, 0); //HOME position. No rotation, no translation.

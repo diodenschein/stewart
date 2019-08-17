@@ -23,7 +23,7 @@
 #define __STU_CONFIG_H__
 
 //#define ENABLE_SERIAL_COMMANDS    //Comment out, to omit Command shell code.
-#define ENABLE_NUNCHUCK           //Comment out, to omit Nunchuck code.
+//#define ENABLE_NUNCHUCK           //Comment out, to omit Nunchuck code.
 /*#define ENABLE_TOUCHSCREEN        //Comment out, to omit Touchscreen code.*/
 #define ENABLE_PWM_SERVO
 /*
@@ -39,21 +39,21 @@
 //Which servos are reversed. 1 = reversed, 0 = normal.
 const int SERVO_REVERSE[6] = {0, 1, 0, 1, 0, 1};
 
-#define SERVO_MIN_ANGLE     20
+#define SERVO_MIN_ANGLE     10
 #define SERVO_MAX_ANGLE     170
 const int SERVO_MID_ANGLE = SERVO_MIN_ANGLE + (SERVO_MAX_ANGLE - SERVO_MIN_ANGLE) / 2;
 
-#define SERVO_MIN_US        160
-#define SERVO_MAX_US        570
+#define SERVO_MIN_US        120
+#define SERVO_MAX_US        470
 const int SERVO_MID_US = SERVO_MIN_US + (SERVO_MAX_US - SERVO_MIN_US) / 2;
 
 const int SERVO_TRIM[] = {  //trim values, in microseconds, AFTER reversing
-  0,
-  -15,
-  5,
-  -5,
-  -10,
-  -15
+  -34,
+  29,
+  -24,
+  55,
+  -19,
+  28
 };
 
 const int SERVO_PINS[] = {  //pin numbers for each servo signal.

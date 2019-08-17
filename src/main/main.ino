@@ -21,7 +21,7 @@
 
 #include "config.h"
 #include "Platform.h"
-#include "Logger.h"
+//#include "Logger.h"
   #include <Wire.h>
 
   #include <Adafruit_PWMServoDriver.h>
@@ -147,7 +147,7 @@ void updateServos() {
     //  // Logger::trace("SRV: s%d = %.2f + %d (value + trim)", i, val, SERVO_TRIM[i]);
 
 //#ifdef ENABLE_SERVOS
-            pwm.setPWM(i, 0, (int)constrain(val + SERVO_TRIM[i], SERVO_MIN_US, SERVO_MAX_US));
+            pwm.setPWM(i+4, 0, (int)constrain(val + SERVO_TRIM[i], SERVO_MIN_US, SERVO_MAX_US));
 
      //   servos[i].writeMicroseconds((int)constrain(val + SERVO_TRIM[i], SERVO_MIN_US, SERVO_MAX_US));
      // #endif
